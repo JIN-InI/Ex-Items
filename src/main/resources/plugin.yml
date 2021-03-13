@@ -1,0 +1,10 @@
+name: ExItems
+version: ${project.version}
+main: tokyo.ini.exitems.ExItems
+api-version: 1.16
+load: STARTUP
+commands:
+  exitems:
+    aliases: [ ei ]
+    description: Command description
+    usage: Usage:/<command> <name> <want command> <option>
