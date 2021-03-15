@@ -19,7 +19,7 @@ public class CommandClass implements CommandExecutor {
             return false;
         }
         if (! args[1].startsWith("/")) {
-            sender.sendMessage("Error:コマンド部分に/を入れてください");
+            sender.sendMessage(Errorcolor("Error:コマンド部分に/を入れてください"));
             return true;
         }
         //アイテムネーム設定
@@ -47,6 +47,17 @@ public class CommandClass implements CommandExecutor {
         giveitem.setItemMeta(im);
         //アイテムの付与
         inv.addItem(giveitem);
+        sender.sendMessage(HeadDeco("本を付与しました"));
         return true;
+    }
+
+    public String Errorcolor(String string){
+        String red = "§4";
+        return red + string;
+    }
+
+    public String HeadDeco(String string){
+        String head = "§b[§6Ex§b-§6Items§b]§e";
+        return head + string;
     }
 }
