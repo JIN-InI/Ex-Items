@@ -21,10 +21,8 @@ public class EventClass implements Listener {
 
         if(e.getHand().equals(EquipmentSlot.HAND)){
             item = player.getInventory().getItemInMainHand();
-            slot = player.getInventory().getHeldItemSlot();
         }else{
             item = player.getInventory().getItemInOffHand();
-            slot = 106;
         }
         if(item != null && item.getType() != null && item.getType() != Material.AIR && item.hasItemMeta() && item.getType() == Material.BOOK){
             ItemMeta im = item.getItemMeta();
