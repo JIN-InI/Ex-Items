@@ -8,7 +8,6 @@ public final class ExItems extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Starting");
         getCommand("exitem").setExecutor(new CommandClass());
-        getCommand("giveexitem").setExecutor(new CommandClass());
         getServer().getPluginManager().registerEvents(new EventClass(), this);
     }
 

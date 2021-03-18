@@ -6,9 +6,5 @@ load: STARTUP
 commands:
   exitem:
     aliases: [ ei ]
-    description: You can get the "books with a command (a.k.a. Ex-Item)" through a command
-    usage: Usage:/<command> <name> <want command> <option>
-  giveexitem:
-    aliases: [ gi ]
-    description: You can give the Ex-Item to other player through a this command
-    usage: Usage:/<command> <Player's name>
+    description: Ex-Items's main command
+    usage: Usage:/<command> <sub command>

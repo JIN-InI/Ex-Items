@@ -17,7 +17,6 @@ public class EventClass implements Listener {
         if(e.getAction().equals(Action.PHYSICAL)) return;
         Player player = e.getPlayer();
         ItemStack item = null;
-        int slot = 0;
 
         if(e.getHand().equals(EquipmentSlot.HAND)){
             item = player.getInventory().getItemInMainHand();
